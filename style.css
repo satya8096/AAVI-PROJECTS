@@ -62,14 +62,6 @@ body p{
     outline: none;
 }
 
-/* Footer */
-footer{
-    background-color: rgb(210, 237, 249);
-}
-.copyright-content{
-    background-color: rgb(99, 98, 98);
-}
-
 
 
 
@@ -106,4 +98,77 @@ footer{
 }
 .contact-form form textarea{
     width: 100%;
+}
+
+
+/* Services Page */
+.service-section1-img img{
+    width: 80%;
+}
+.service-section2-img img{
+    width: 80%;
+}
+.service-section3-img img{
+    width: 80%;
+}
+.service-section4-img img{
+    width: 80%;
+}
+.service-section5-img img{
+    width: 80%;
+}
+.service-section6-img img{
+    width: 80%;
+}
+.service-section7-img img{
+    width: 80%;
+}
+.service-section8-img img{
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    background-color: rgb(210, 237, 249);
+}
+.copyright-content{
+    background-color: rgb(99, 98, 98);
+}
+.about-company{
+    width: 20%;
+}
+
+.footer-contact{
+    width: 18%;
+}
+
+.footer-map{
+    width: 19%;
+}
+
+.footer-map img{
+    width: 100%;
+}
+.social-icons{
+    background-color: rgb(210, 237, 249);
+}
+.social-icons i{
+    font-size: 1.6rem;
+    margin: 0rem 1rem;
+    color: #258;
 }
