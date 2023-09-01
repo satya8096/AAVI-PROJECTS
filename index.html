@@ -17,9 +17,17 @@
 </head>
 <body>
 
-    <nav class="nav-container">
+    <nav class="nav-container nav sticky-top">
+       <div class="logo-bars">
         <h2>AAVI PROJECTS</h2>
-        <ul class="nav nav-pills list">
+        <!-- Bars -->
+        <div class="bars">
+            <span><i class="fa-solid fa-bars"></i></span>
+        </div>
+       </div>
+        <ul class="nav nav-pills list get-nav">
+            <!-- Cross Mark -->
+            <span class="xmark-icon"><i class="fa-solid fa-circle-xmark"></i></span>
             <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="./about.html">About Us</a></li>
             <li class="nav-item dropdown">
@@ -37,7 +45,7 @@
     <div class="home-page-container">
         <div class="home-content">
             <h1 class="mt-3 mb-3">CUSTOMER FOCUSED <br> TECHNOLOGY DRIVEN</h1>
-            <h2  class="mt-3 mb-3">Your Trusted & Local <br> Professional Electrician</h2>
+            <h2  class="mt-3 mb-3">Your Trusted <br> Professional Electrician</h2>
             <div class="home-btn mt-4 mb-4">
                 <button class="btn btn-primary"><a href="#" class="btn-link text-white text-decoration-none">REQUEST A QUOTE <i class="fa-solid fa-circle-arrow-right"></i></a></button>
             </div>
@@ -60,7 +68,7 @@
 
     <div class="home-content-section2 d-flex align-items-center justify-content-between m-4">
         <img src="./Images/home-content-section2-img.jpg" alt="">
-        <div class="section2-content w-50">
+        <div class="section2-content ">
             <h2 class="text-primary">What You Can Expect</h2>
             <h3>Honest Communication</h3>
             <p>We’ll explain the reason behind our recommendations in language you can understand.</p>
@@ -85,11 +93,11 @@
                 <h3>Location :</h3>
                 <p>Hydrabad</p>
                 <h3>Email :</h3>
-                <p>vishnuvardhan.kamidi@aaviprojects.com</p>
+                <p>Email :<a href="mailto:Email : vishnuvardhan.kamidi@aaviprojects.com" > vishnuvardhan.kamidi<br>@aaviprojects.com</a></p>
                 <h3>Phone :</h3>
                 <p>+91 9701523499</p>
             </div>
-            <div class="form-container-sub2 w-50">
+            <div class="form-container-sub2">
                 <form>
                     <input type="text" placeholder="Name" class="w-100 mt-2 mb-2 p-2">
                     <input type="email"  placeholder="Email" class="w-100 mt-3 mb-2 p-2" required>
@@ -105,29 +113,31 @@
     <div class="footer-container">
         <footer class="d-flex justify-content-between p-4">
             <div class="about-company">
-                <h2>AAVI PROJECTS</h2>
+                <h4>AAVI PROJECTS</h4>
                 <p>AAVI PROJECTS is your trusted local electrician serving in Hydrabad and the surrounding communities.</p>
             </div>
             <div class="useful-links">
                 <h4>Useful Links</h4>
                 <ul class="footer-list">
-                    <li class="list-unstyled"><a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> Home</a></li>
-                    <li class="list-unstyled"><a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
-                    <li class="list-unstyled"><a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> Services</a></li>
-                    <li class="list-unstyled"><a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> Clients</a></li>
-                    <li class="list-unstyled"><a href="#" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
+                    <li class="list-unstyled"><a href="./index.html" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> Home</a></li>
+                    <li class="list-unstyled"><a href="./about.html" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> About Us</a></li>
+                    <li class="list-unstyled"><a href="./services.html" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> Services</a></li>
+                    <li class="list-unstyled"><a href="./clients.html" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> Clients</a></li>
+                    <li class="list-unstyled"><a href="./contact.html" class="text-decoration-none text-dark"><i class="fa-solid fa-angles-right"></i> Contact</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h4>Contact</h4>
                 <p>Address : Hydrabad, Telengana, India</p>
                 <p>Phone : +91 8686822007</p>
-                <p>Email : vishnuvardhan.kamidi@aaviprojects.com</p>
-            </div>
-            <div class="footer-map">
-                <img src="./Images/High-Voltage Services.jpg" alt="">
+                <p>Email :<a href="mailto:Email : vishnuvardhan.kamidi@aaviprojects.com" class="footer-email"> vishnuvardhan.kamidi<br>@aaviprojects.com</a></p>
             </div>
         </footer>
+        <!-- Footer Map -->
+        <div class="footer-map">
+            <h4 class="text-center">Our Location</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252559.26675038165!2d78.45900776533563!3d17.426253518559815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb848e59abafeb%3A0x51a125b1dc67bfd6!2sAAvi%20Projects!5e0!3m2!1sen!2sin!4v1693573444954!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <!-- Social Icons -->
         <div class="social-icons p-4 text-center">
             <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
