@@ -12,5 +12,5 @@ bars.onclick = ()=>{
 }
 
 xmark.onclick = ()=>{
-    navBar.style.left = "-34rem"
+    navBar.style.left = "-1000px"
 }

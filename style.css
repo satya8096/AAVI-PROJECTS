@@ -27,13 +27,16 @@ body p{
 .nav-container .list li a{
     padding: 1.2rem 1.4rem;
     color: black;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 1.3rem;
+    font-family: 'Caveat', cursive;
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 .nav-container li a:hover{
     color: blue;
 }
 .logo-bars{
-    padding: 0.8rem 1.8rem;
+    padding: 0rem 1.8rem;
 }
 .bars{
     display: none;
@@ -55,12 +58,20 @@ body p{
     background-size: cover;
 }
 .home-content{
+    text-align: center;
     padding: 11rem 2rem 2rem 4rem;
 }
 
 /* Section1 */
 .content-left{
     width: 600px;
+}
+.content-right{
+    text-align: center;
+    width: 40%;
+}
+.content-right img{
+    width: 60%;
 }
 
 /* Section2 */
@@ -76,7 +87,9 @@ body p{
 .form-container{
     margin: 5rem 0rem;
     padding: 1rem 0rem;
-    background-color: aquamarine;
+    background: linear-gradient(45deg,rgba(0, 255, 174, 0.8),rgba(0, 38, 255, 0.6));
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .form-container-sub2{
@@ -84,8 +97,16 @@ body p{
 }
 .form-container-sub2 input{
     outline: none;
+    border: none;
+    border-radius: 4px;
 }
-
+.form-container-sub2 input:focus{
+    box-shadow: 0px 0px 10px blue;
+}
+.form-container{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-weight: 700;
+}
 
 
 
@@ -131,9 +152,16 @@ body p{
     padding: 0.6rem;
     margin: 1rem 0rem;
     outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px black;
 }
 .contact-form form textarea{
     width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px black;
 }
 
 
@@ -159,15 +187,31 @@ body p{
 footer{
     background-color: rgb(210, 237, 249);
 }
+footer ul li{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
 .copyright-content{
     background-color: rgb(99, 98, 98);
 }
-.about-company{
-    width: 20%;
+.copyright-content p{
+    font-family: 'Ysabeau Infant', sans-serif;
 }
-
+.about-company{
+    text-align: center;
+    width: 20%;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.about-company p{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.about-company img{
+    width: 45%;
+}
 .footer-contact{
     width: 18%;
+}
+.footer-contact p{
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 
 .footer-map{
@@ -199,8 +243,8 @@ footer{
     .nav-container ul{
         padding-top: 3rem;
         position: absolute;
-        left: -34rem;
-        top: 5.1rem;
+        left: -1000px;
+        top: 7.1rem;
         width: 100%;
         text-align: center;
         flex-direction: column;
@@ -221,7 +265,7 @@ footer{
         width: 100%;
         display: flex;
         align-items: center;
-        padding: 1.4rem 1.8rem;
+        padding: 0.2rem 1.8rem;
         justify-content: space-between;
     }
     .bars{
@@ -237,9 +281,6 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 100%;
-    }
-    .home-content{
-        text-align: center;
     }
     .home-content-section1{
         flex-direction: column-reverse;
@@ -323,6 +364,12 @@ footer{
     .section2-img img{
         width: 85%;
     }
+    .content-right{
+        width: 80%;
+    }
+    .content-right img{
+        width: 100%;
+    }
 
 
 
@@ -369,9 +416,137 @@ footer{
         padding: 1rem;
     }
     .contact-google-map{
+        width: 80%;
+    }
+    .contact-google-map iframe{
         width: 100%;
     }
     .contact-google-map img{
+        width: 80%;
+    }
+}
+
+
+
+/* Ipads View */
+
+@media (max-width: 768px) and (min-width: 481px){
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-container ul{
+        padding-top: 3rem;
+        position: absolute;
+        left: -1000px;
+        top: 7.1rem;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        background-color: gray;
+    }
+    .nav-container .list li a{
+        color: white;
+        font-weight: 700;
+    }
+    .nav-container ul i{
+        position: absolute;
+        top: 1rem;
+        right: 1.8rem;
+        font-size: 2rem;
+        color: yellow;
+    }
+    .logo-bars{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0.2rem 1.8rem;
+        justify-content: space-between;
+    }
+    .bars{
+        position: absolute;
+        right: 2rem;
+        display: flex;
+    }
+    .xmark-icon{
+        display: flex;
+    }
+    .home-content-section1{
+        flex-direction: column-reverse;
+    }
+    .home-content-section1 .content-left{
+        width: 95%;
+        text-align: center;
+    }
+    .home-content-section2{
+        flex-direction: column;
+        text-align: center;
+        width: 92%;
+    }
+    .section2-content{
+        width: 90%;
+    }
+    .home-content-section2 img{
+        width: 60%;
+        margin: 2rem 0rem;
+    }
+    .content-right img{
+        width: 90%;
+    }
+    .about-section3-container{
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    .about-left{
+        text-align: center;
+    }
+    .section2-img img{
+        width: 85%;
+    }
+    .content-right{
+        width: 80%;
+    }
+    .content-right img{
+        width: 100%;
+    }
+    .contact-section1-container{
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem 0.4rem;
+    }
+    .contact-form{
+        width: 80%;
+        padding: 1rem;
+    }
+    .contact-google-map{
+        width: 80%;
+    }
+    .contact-google-map img{
+        width: 80%;
+    }
+
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .about-company{
+        padding-top: 2rem;
+        width: 50%;
+        text-align: center;
+    }
+    .footer-contact{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-email{
+        font-size: 1rem;
+    }
+    .footer-map{
+        width: 100%;
+    }
+    .footer-map iframe{
         width: 80%;
     }
 }
