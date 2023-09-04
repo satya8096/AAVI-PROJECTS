@@ -6,6 +6,9 @@
     box-sizing: border-box;
     letter-spacing: 0.6px;
 }
+body{
+    scroll-behavior: smooth;
+}
 body h2 , h1 , h3 , h4{
     font-family: 'Signika Negative', sans-serif;
 }
@@ -20,9 +23,12 @@ body p{
     justify-content: space-between;
     background-color: white;
 }
-.nav-container ul{
+.nav-container .list{
     transition: 0.5s;
     margin-left: 4rem;
+}
+.nav-container .list li{
+    transition: 0.5s;
 }
 .nav-container .list li a{
     padding: 1.2rem 1.4rem;
@@ -34,6 +40,9 @@ body p{
 }
 .nav-container li a:hover{
     color: blue;
+}
+.nav-container li:hover{
+    transform: translateY(-5px);
 }
 .logo-bars{
     padding: 0rem 1.8rem;
@@ -82,6 +91,46 @@ body p{
 .section2-content{
     width: 50%;
 }
+.section3-box{
+    width: 17rem;
+    height: 21rem;
+    padding: 0.7rem;
+    transition: 0.5s;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px black;
+}
+.section3-box i{
+    color: rgb(255, 191, 0);
+    font-size: 3rem;
+    transition: 0.5s;
+    margin: 0.5rem 0rem;
+}
+.section3-box:hover{
+    scale: 1.02;
+}
+.section3-box i:hover{
+    transform: translateY(-5px);
+    color: red;
+}
+.home-content-section4{
+    padding: 3rem 2rem;
+    margin: 3rem 0rem;
+    background-color: darkslategray;
+    color: white;
+}
+.section4-btn button a{
+    padding: 0.8rem 1.6rem;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+
+
+
+
+
+
+
+
 
 /* Form */
 .form-container{
@@ -111,8 +160,10 @@ body p{
 
 
 /* About Page Styles */
+
 .about-head{
-    background-color: rgb(202, 253, 253);
+    background-color:#759EB8;
+    color: white;
 }
 .about-left{
     text-align: right;
@@ -129,7 +180,32 @@ body p{
     font-size: 2rem;
     color: #258;
 }
-
+.section4-container1 p,.section4-container2 p{
+    width: 70%;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+}
+.about-section4-container h2{
+    padding: 2rem 0rem;
+    background-color: #F3A712;
+    color: white;
+    text-align: center;
+}
+.about-section4-container h3{
+    padding: 1rem 0rem;
+    text-align: center;
+    color: rgb(253, 0, 0);
+}
+.haveAquestion-container{
+    margin: 2rem 0rem;
+    padding: 2rem 0rem;
+    text-align: center;
+    color: white;
+    background: url(./Images/Industrial\ Equipment\ Installation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Contact Form */
 .contact-section1-container{
@@ -156,6 +232,12 @@ body p{
     border-radius: 4px;
     box-shadow: 0px 0px 4px black;
 }
+.contact-form form input:focus{
+    box-shadow: 0px 0px 6px blue;
+}
+.contact-form form textarea:focus{
+    box-shadow: 0px 0px 6px blue;
+}
 .contact-form form textarea{
     width: 100%;
     outline: none;
@@ -181,20 +263,67 @@ body p{
 
 
 
+/* TOP BUTTON */
+.goToTop a{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px black;
+    animation: TopButtonAnimation 6s infinite;
+}
 
 /* Footer */
 
+.footer-box{
+    height: 16rem;
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 footer{
-    background-color: rgb(210, 237, 249);
+    padding-top: 4rem;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+footer h3{
+    position: relative;
+    color: orange;
+    margin-bottom: 1rem;
+}
+footer h4{
+    color: orange;
+    position: relative;
+    margin-bottom: 1rem;
+}
+footer h4::after , footer h3::after{
+    content: ' ';
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 4rem;
 }
 footer ul li{
+    transition: 0.5s;
     font-family: 'Ysabeau Infant', sans-serif;
 }
+footer ul li:hover{
+    transform: translateX(6px);
+}
 .copyright-content{
-    background-color: rgb(99, 98, 98);
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin: 0;
 }
 .copyright-content p{
     font-family: 'Ysabeau Infant', sans-serif;
+}
+.copy-icon{
+    font-size: 1.6rem;
 }
 .about-company{
     text-align: center;
@@ -207,34 +336,47 @@ footer ul li{
 .about-company img{
     width: 45%;
 }
-.footer-contact{
-    width: 18%;
-}
 .footer-contact p{
     font-family: 'Ysabeau Infant', sans-serif;
 }
+.footer-contact{
+    text-align: left;
+}
 
 .footer-map{
-    width: 100%;
-    background-color: rgb(210, 237, 249);
+    width: 30%;
+    background-color: rgb(44, 44, 44);
+    color: white;
     margin-bottom: 0rem;
-    text-align: center;
 }
 
 .footer-map iframe{
-    width: 30%;
+    width: 70%;
+    border-radius: 8px;
 }
 .social-icons{
-    background-color: rgb(210, 237, 249);
+    margin: 0rem;
+    background-color: rgb(44, 44, 44);
 }
 .social-icons i{
+    transition: 0.4s;
     font-size: 1.6rem;
     margin: 0rem 1rem;
-    color: #258;
+    color: springgreen;
+}
+.social-icons i:hover{
+    color: crimson;
+    transform: translateY(-6px);
 }
 
-
-
+@keyframes TopButtonAnimation {
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
 
 @media (min-width:320px) and (max-width:480px) {
     .nav-container{
@@ -301,18 +443,26 @@ footer ul li{
         width: 90%;
         margin: 2rem 0rem;
     }
+    .home-content-section4{
+        flex-direction: column;
+        gap: 4rem;
+    }
     .form-container1{
         flex-direction: column;
     }
     footer{
-        flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
     .about-company{
         padding-top: 2rem;
         width: 100%;
         text-align: center;
+    }
+    .goToTop a{
+        right: 1rem;
+        bottom: 1rem;
+        padding: 0.2rem 0.4rem;
     }
     .footer-contact{
         width: 100%;
@@ -326,6 +476,15 @@ footer ul li{
     }
     .footer-map iframe{
         width: 95%;
+    }
+    .footer-box{
+        width: 100%;
+    }
+    .copyright-content p{
+        font-size: 0.6rem;
+    }
+    .copy-icon{
+        font-size: 1rem;
     }
     .form-container-sub1{
         text-align: center;
@@ -430,7 +589,7 @@ footer ul li{
 
 /* Ipads View */
 
-@media (max-width: 768px) and (min-width: 481px){
+@media (max-width: 868px) and (min-width: 481px){
     .nav-container{
         flex-direction: column;
     }
@@ -489,6 +648,10 @@ footer ul li{
         width: 60%;
         margin: 2rem 0rem;
     }
+    .home-content-section4{
+        flex-direction: column;
+        gap: 4rem;
+    }
     .content-right img{
         width: 90%;
     }
@@ -529,7 +692,11 @@ footer ul li{
     footer{
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        justify-content: center;
+        gap: 1.4rem;
+    }
+    .footer-box{
+        width: 100%;
     }
     .about-company{
         padding-top: 2rem;
@@ -538,15 +705,17 @@ footer ul li{
     }
     .footer-contact{
         width: 100%;
-        text-align: center;
     }
     .footer-email{
         font-size: 1rem;
     }
     .footer-map{
-        width: 100%;
+        width: 50%;
     }
     .footer-map iframe{
         width: 80%;
+    }
+    .copyright-content p{
+        font-size: 1rem;
     }
 }
