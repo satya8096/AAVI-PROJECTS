@@ -663,7 +663,10 @@ footer ul li:hover{
         display: flex;
     }
     .home-page-container{
-        height: 50%;
+        height: 80%;
+        background: url(./Images/home-page-background-destop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .home-content-section1{
         flex-direction: column-reverse;
@@ -753,5 +756,13 @@ footer ul li:hover{
     }
     .copyright-content p{
         font-size: 1rem;
+    }
+}
+@media (max-width:1280px) and (min-width:720px) {
+    .home-page-container{
+        height: 60%;
+        background: url(./Images/home-page-background-destop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
