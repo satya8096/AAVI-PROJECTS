@@ -229,7 +229,7 @@ body p{
 
 /* Contact Form */
 .contact-section1-container{
-    padding: 2rem 0rem;
+    padding: 2rem 1rem;
     color: white;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./Images/creative-background-with-paint-texture.jpg);
     background-repeat: no-repeat;
