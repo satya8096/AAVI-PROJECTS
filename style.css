@@ -760,7 +760,7 @@ footer ul li:hover{
 }
 @media (max-width:1280px) and (min-width:720px) {
     .home-page-container{
-        height: 60%;
+        height: 80%;
         background: url(./Images/home-page-background-destop.jpg);
         background-repeat: no-repeat;
         background-size: cover;
