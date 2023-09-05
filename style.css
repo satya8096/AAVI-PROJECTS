@@ -226,6 +226,9 @@ body p{
 .haveAquestion-container button{
     animation: TopButtonAnimation 6s infinite;
 }
+.haveAquestion-container button a{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
 
 /* Contact Form */
 .contact-section1-container{
