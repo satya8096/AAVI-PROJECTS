@@ -662,6 +662,9 @@ footer ul li:hover{
     .xmark-icon{
         display: flex;
     }
+    .home-page-container{
+        height: 50%;
+    }
     .home-content-section1{
         flex-direction: column-reverse;
     }
