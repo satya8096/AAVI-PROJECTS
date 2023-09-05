@@ -269,9 +269,10 @@ body p{
     outline: none;
     border: none;
     border-radius: 4px;
+    font-family: 'Ysabeau Infant', sans-serif;
     box-shadow: 0px 0px 4px black;
 }
-.contact-sub-btn{
+.contact-form form button{
     font-family:  'Ysabeau Infant', sans-serif;
 }
 
